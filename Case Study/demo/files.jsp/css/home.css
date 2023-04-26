@@ -1,0 +1,57 @@
+.header{
+    background-color: black;
+    border-radius: 30px;
+}
+.menu{
+    padding: 5px;
+    width: 100%;
+}
+
+.button,.icon,i,img{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 5px;
+    vertical-align: middle;
+}
+button{
+    border-radius: 20px;
+    background-color: white;
+    font-size: 17px;
+    padding: 4px;
+    color: black;
+    width: 120px;
+    vertical-align: middle;
+}
+.search,i,.submit{
+    text-align: right;
+    font-size: 20px;
+    font-weight: lighter;
+    border-radius: 20px;
+    vertical-align: middle;
+}
+.search{
+    width: 100px;
+}
+.logo{
+    color: white;
+    font-size: 30px;
+    text-align: right;
+    vertical-align: middle;
+    padding: 20px;
+}
+.body{
+    border: 3px solid black;
+    border-radius: 30px;
+    margin-top: 5px;
+    padding: 20px;
+}
+.boximg{
+    border: 1px solid black;
+    padding: 3px;
+    width: 500px
+}
+.myimg{
+    width: 50%;
+    height: 50%;
+}

@@ -36,11 +36,12 @@ public class CustomerServiceImpl implements CustomerService{
 
     @Override
     public void update(int id, Customer customer) {
-        customers.put(id,customer);
+
+        customers.put(id, customer);
     }
 
     @Override
     public void remove(int id) {
-        customers.get(id);
+        customers.remove(id);
     }
 }
