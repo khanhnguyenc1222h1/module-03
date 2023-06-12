@@ -2,82 +2,75 @@ package com.example.casestudykhanh.model.service;
 
 import com.example.casestudykhanh.model.dao.UserDao;
 import com.example.casestudykhanh.model.entity.User;
-import jdk.internal.org.objectweb.asm.tree.analysis.Value;
 
 import javax.servlet.RequestDispatcher;
-import javax.servlet.ServletException;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.IOException;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-
-import static com.example.casestudykhanh.model.dao.UserDao.validUser;
+import java.util.regex.Pattern;
 
 public class UserService{
-    public static void registerUser(HttpServletRequest request, HttpServletResponse response) {
-        String fullName = request.getParameter("fullname");
-        String address = request.getParameter("address");
-        String phoneNumber = request.getParameter("phonenumber");
-        String userName = request.getParameter("username");
-        String passWord = request.getParameter("password");
-        User user = new User(fullName,address,phoneNumber,userName,passWord);
-        UserDao.insert(user);
-        RequestDispatcher dispatcher = request.getRequestDispatcher("\\WEB-INF\\view\\home\\home.jsp");
+
+    static UserDao userDao = new UserDao();
+    PostService postService = new PostService();
+
+    public void registerUser(HttpServletRequest request, HttpServletResponse response){
         try{
-            dispatcher.forward(request,response);
-        }catch (ServletException e){
-            e.printStackTrace();
-        }catch (IOException e){
-            e.printStackTrace();
+            String fullname = request.getParameter("fullname");
+            String email = request.getParameter("email");
+            Pattern emailP = Pattern.compile("^(.+)@(.+)$");
+//            request.setAttribute("messE",(emailP.matcher(email).find()) ? "":"nhập lại email");
+            /*Mật khẩu phải chứa ít nhất một chữ số [0-9].
+                    Mật khẩu phải chứa ít nhất một ký tự Latinh viết thường [az].
+                    Mật khẩu phải chứa ít nhất một ký tự Latinh viết hoa [AZ].
+                    Mật khẩu phải chứa ít nhất một ký tự đặc biệt như ! @ # & ( ).
+                    Mật khẩu phải có độ dài ít nhất là 6 ký tự và tối đa là 8 ký tự.*/
+            String password = request.getParameter("password");
+            Pattern passP = Pattern.compile("^(?=.*[0-9])(?=.*[a-z])(?=.*[A-Z])(?=.*[!@#&()–[{}]:;',?/*~$^+=<>]).{6,8}$");
+//            request.setAttribute("messP",(passP.matcher(password).find())?"":"nhập lại password");
+            String confirm_password = request.getParameter("confirm_password");
+            /*request.setAttribute("messCP",password.equals(confirm_password) ? "password đã được xác nhận"
+                    : "password không chính xác");*/
+            int num = Integer.parseInt(request.getParameter("gender"));
+            String gender="";
+            if(num == 0) {
+                gender = "Female";
+            }else{
+                gender = "Male";
+            }
+            if(emailP.matcher(email).find() && passP.matcher(password).find() && password.equals(confirm_password)){
+                PostService postService = new PostService();
+                User user = new User(fullname,email,password,gender);
+                userDao.insertUser(user);
+                request.setAttribute("user",user);
+                postService.showPost(request,response);
+            }else{
+                request.setAttribute("messE",(emailP.matcher(email).find()) ? "":"nhập lại email");
+                request.setAttribute("messP",(passP.matcher(password).find())?"":"nhập lại password");
+                request.setAttribute("messCP",password.equals(confirm_password) ? ""
+                    : "password không chính xác");
+                request.setAttribute("rsF",fullname);
+                request.setAttribute("rsE",email);
+                request.setAttribute("rsP",password);
+                request.setAttribute("rsCP",confirm_password);
+                request.getRequestDispatcher("\\WEB-INF\\view\\Register.jsp").forward(request,response);
+            }
+
+        }catch (Exception e){
         }
     }
-    public static void showRegisterUser(HttpServletRequest request, HttpServletResponse response){
-        RequestDispatcher dispatcher = request.getRequestDispatcher("\\WEB-INF\\view\\register\\register.jsp");
-        try{
-            dispatcher.forward(request,response);
-        }catch (ServletException e){
-            e.printStackTrace();
-        }catch (IOException e){
-            e.printStackTrace();
-        }
-    }
-    public static void loginUser(HttpServletRequest request, HttpServletResponse response){
-        RequestDispatcher dispatcher = null;
-        String userName = request.getParameter("username");
-        String password = request.getParameter("password");
-        boolean validUser = validUser(userName,password);
-        if(validUser){
-            dispatcher = request.getRequestDispatcher("\\WEB-INF\\view\\home\\home.jsp");
-        }else{
-            dispatcher = request.getRequestDispatcher("\\WEB-INF\\view\\error\\error.jsp");
-        }
-        try{
-            dispatcher.forward(request,response);
-        }catch (ServletException e){
-            e.printStackTrace();
-        }catch (IOException e){
-            e.printStackTrace();
-        }
-    }
-    public static void showLoginUser(HttpServletRequest request, HttpServletResponse response){
-        RequestDispatcher dispatcher = request.getRequestDispatcher("\\WEB-INF\\view\\login\\login.jsp");
-        try{
-            dispatcher.forward(request,response);
-        }catch (ServletException e){
-            e.printStackTrace();
-        }catch (IOException e){
-            e.printStackTrace();
-        }
-    }
-    public static void showHome(HttpServletRequest request, HttpServletResponse response){
-        RequestDispatcher dispatcher = request.getRequestDispatcher("\\WEB-INF\\view\\home\\home.jsp");
-        try{
-            dispatcher.forward(request,response);
-        }catch (ServletException e){
-            e.printStackTrace();
-        }catch (IOException e){
-            e.printStackTrace();
-        }
+    public void loginUser(HttpServletRequest request, HttpServletResponse response) {
+       try{
+           String email = request.getParameter("email");
+           String password = request.getParameter("password");
+           User result = UserDao.getUserById(email,password);
+           if(result != null){
+                response.sendRedirect("/show");
+           }else{
+                request.setAttribute("mess","Nhập lại email hoặc password");
+                request.setAttribute("messE",email);
+                request.getRequestDispatcher("\\WEB-INF\\view\\Login.jsp").forward(request,response);
+           }
+       }catch (Exception e){
+       }
     }
 }

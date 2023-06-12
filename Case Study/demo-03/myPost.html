@@ -1,0 +1,152 @@
+<%--
+  Created by IntelliJ IDEA.
+  User: Admin
+  Date: 24/04/2023
+  Time: 9:29 SA
+  To change this template use File | Settings | File Templates.
+--%>
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<html>
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+<head>
+    <title>My Blog</title>
+</head>
+<body>
+<header class="justify-content-between d-flex ">
+    <div class="d-infine-flex m-3">
+        <a class="h3 nav-link"><b>MyBlog</b></a>
+    </div>
+    <div class="d-flex">
+        <div class="d-infine-flex justify-content-between me-5" style="padding-top: 30px;">
+            <div class="btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                <label class="btn  me-3">Nguyen Van A</label>
+
+                    <form action="/create" method="get">
+                        <input type="submit" class="btn-check" id="btncheck1" autocomplete="off">
+                        <label class="btn btn-outline-primary me-2" for="btncheck1">Create</label>
+                    </form>
+
+                <form action="/delete" method="get">
+                    <input type="submit" class="btn-check" id="btncheck2" autocomplete="off">
+                    <label class="btn btn-outline-primary me-2" for="btncheck2">Delete</label>
+                </form>
+
+                <form action="/update" method="get">
+                    <input type="submit" class="btn-check" id="btncheck3" autocomplete="off">
+                    <label class="btn btn-outline-primary me-2" for="btncheck3">Update</label>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="container-fluid col-md-10" >
+    <main >
+
+        <div class="row">
+            <div class="col-sm-3"><div class="card" style="width: 18rem;">
+                <img src="https://i.pinimg.com/564x/99/db/53/99db535bfef6b8fd2935aac826ee3c2d.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-sm-3"><div class="card" style="width: 18rem;">
+                <img src="https://i.pinimg.com/236x/16/91/aa/1691aa9b0ea171863a0fe0d75de46678.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-sm-3"><div class="card" style="width: 18rem;">
+                <img src="https://i.pinimg.com/236x/52/80/c8/5280c84f2f02741ae126c1699a26acc3.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-sm-3"><div class="card" style="width: 18rem;">
+                <img src="https://i.pinimg.com/236x/4d/c7/54/4dc7541dd97a26f2d56b0712cfe35aab.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-sm-3"><div class="card" style="width: 18rem;">
+                <img src="https://i.pinimg.com/236x/11/e5/cc/11e5cc2ed4f09b4042394bb5f1274402.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-sm-3"><div class="card" style="width: 18rem;">
+                <img src="https://i.pinimg.com/564x/ab/db/d7/abdbd7e9c762040de417d0eccc3b4b04.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-sm-3"><div class="card" style="width: 18rem;">
+                <img src="https://i.pinimg.com/236x/63/ff/64/63ff6477488e2de79e39e7c988216606.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-sm-3"><div class="card" style="width: 18rem;">
+                <img src="https://i.pinimg.com/736x/d8/0b/ee/d80bee2707adcc41cf9301d9d4877618.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-sm-3"><div class="card" style="width: 18rem;">
+                <img src="https://i.pinimg.com/236x/93/fd/05/93fd055d79d3dd62d6930f9ac2082ce4.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-sm-3"><div class="card" style="width: 18rem;">
+                <img src="https://i.pinimg.com/236x/c2/94/6e/c2946e442012dfb90035357345438609.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-sm-3"><div class="card" style="width: 18rem;">
+                <img src="https://i.pinimg.com/236x/bb/f4/1c/bbf41c4c8f1e90793cd89f76a73f8890.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            </div>
+            <div class="col-sm-3"><div class="card" style="width: 18rem;">
+                <img src="https://i.pinimg.com/474x/b5/56/36/b556362aaf6dac317ffd1e72a8fe1dee.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+
+    </main>
+</div>
+
+<footer style="background-color: greenyellow; height: 30px">
+    <div style="text-align: center">
+        © 2023 by My Blog. Powered and secured by Wix
+    </div>
+</footer>
+
+</body>
+</html>

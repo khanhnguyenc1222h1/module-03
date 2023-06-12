@@ -1,0 +1,20 @@
+*{
+    box-sizing: initial;
+}
+.header, .footer{
+    background-color: lightgray;
+}
+.nav ul{
+    list-style-type: none;
+    overflow: hidden;
+    display: block;
+    text-align: center;
+    background-color: lightgray;
+}
+.nav li{
+    float: left;
+    padding: 5px 20px;
+}
+.nav li:hover{
+    background-color: aqua;
+}

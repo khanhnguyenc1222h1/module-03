@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <!-- Font Awesome -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css"
+            rel="stylesheet"
+    />
+
+</head>
+<body>
+<div class="container" style="width: 90%;padding-top: 60px">
+    <!--    ========alerts=========-->
+    <div class="row">
+        <div class="col-md-4 display-6 fw-bold">Quản lý sản phẩm</div>
+        <div class="col-md-4 offset-md-4">
+            <button type="button" class="btn btn-primary float-end me-4"  data-mdb-toggle="modal" data-mdb-target="#exampleModal">Thêm sản phẩm</button>
+        </div>
+    </div>
+    <!-- Modal -->
+    <form id="myForm">
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h3 class="modal-title" id="exampleModalLabel">Thêm sản phẩm</h3>
+                        <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <!-- Name input -->
+                        <div class="form-outline mb-4">
+                            <input type="text" id="form7Example1" class="form-control" name="name" required/>
+                            <label class="form-label" for="form7Example1">Tên sản phẩm</label>
+                        </div>
+
+                        <!-- image input -->
+                        <div class="form-outline mb-4">
+                            <input type="url" id="typeURL" class="form-control" name="image" required/>
+                            <label class="form-label" for="typeURL">Đường dẫn hình ảnh</label>
+                        </div>
+
+                        <div class="row">
+                            <div class="col order-first">
+                                <!-- quantity input -->
+                                <div class="form-outline mb-4">
+                                    <input type="number" min="0" id="form7Example3" class="form-control" name="quantity" required/>
+                                    <label class="form-label" for="form7Example3">Số lượng</label>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <!-- price input -->
+                                <div class="form-outline mb-4">
+                                    <input type="number" min="0" id="form7Example4" class="form-control" name="price" required/>
+                                    <label class="form-label" for="form7Example4">Giá bán</label>
+                                </div>
+                            </div>
+                            <div class="col order-last">
+                                <!-- Category input -->
+                                <select class="form-control" name="select">
+                                    <option disabled selected>Danh mục</option>
+                                    <option value="1">Đồng hồ </option>
+                                    <option value="2">Laptop</option>
+                                    <option value="3">Điện thoại</option>
+                                    <option value="4">Áo thung</option>
+                                    <option value="5">Quần jean</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-outline mb-4">
+                            <textarea class="form-control" id="textAreaExample" rows="4" required></textarea>
+                            <label class="form-label" for="textAreaExample">Mô tả sản phẩm</label>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-mdb-dismiss="modal">Thoát</button>
+                        <button type="submit" class="btn btn-primary" data-mdb-dismiss="modal">Lưu</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </form>
+    <script>
+        // Lắng nghe sự kiện submit trên form
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault(); // Ngăn chặn hành vi mặc định của form
+
+            var formData = new FormData(this); // Lấy dữ liệu từ form
+            getResult(formData);
+        });
+
+        // Hàm gửi yêu cầu AJAX và hiển thị kết quả
+        function getResult(formData) {
+            var xmlhttp = new XMLHttpRequest();
+            xmlhttp.onreadystatechange = function() {
+                if (this.readyState === 4 && this.status === 200) {
+                    document.getElementById("result").innerHTML = this.responseText;
+                }
+            };
+            xmlhttp.open("POST", "process.jsp", true);
+            xmlhttp.send(formData);
+        }
+        function myUpdate(idProduct){
+            // Gửi yêu cầu AJAX
+            $.ajax({
+                url: '/updateProduct', // Đường dẫn đến script xử lý dữ liệu trên máy chủ
+                method: 'POST',
+                data: { idProduct: idProduct }, // Dữ liệu gửi đi
+                success: function(response) {
+                    // Xử lý kết quả trả về khi yêu cầu thành
+                    document.getElementById("myUpdate").innerHTML = response;
+                },
+                error: function(xhr, status, error) {
+                    // Xử lý lỗi khi yêu cầu thất bại
+                    console.error(error);
+                }
+            });
+        }
+    </script>
+<!--    ==============-->
+    <div style="background-color: #dcfffa">
+        <table class="table text-lg fw-bold" style="vertical-align: middle;text-align: center">
+            <thead>
+            <tr>
+                <th scope="col" style="width: 60px">Stt</th>
+                <th scope="col" style="width: 200px">Hình ảnh</th>
+                <th scope="col">Tên sản phẩm</th>
+                <th scope="col">Số lượng</th>
+                <th scope="col">Giá bán</th>
+                <th scope="col" style="width: 240px">Hành động</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <th scope="row">1</th>
+                <td>
+                    <img
+                            src="https://mdbcdn.b-cdn.net/img/new/standard/city/043.webp"
+                            class="img-fluid hover-shadow w-50 rounded"
+                            alt="Los Angeles Skyscrapers"
+                    />
+                </td>
+                <td>Áo thung</td>
+                <td>3</td>
+                <td>390.000đ</td>
+                <td>
+                    <button type="button" class="btn btn-success"  onclick="myUpdate(idProduct)">Chỉnh sửa</button>
+                    <button type="button" class="btn btn-danger">Xóa</button>
+                </td>
+            </tr>
+
+            </tbody>
+        </table>
+    </div>
+    <div class="row">
+        <div class="col-md-4 display-6">
+            <a class="btn btn-outline-primary" data-mdb-ripple-color="dark"><i class="fas fa-angles-left me-2"></i>Quay về trang chủ</a>
+        </div>
+        <div class="col-md-4 offset-md-4">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination justify-content-end">
+                    <li class="page-item disabled">
+                        <a class="page-link">Previous</a>
+                    </li>
+                    <li class="page-item"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+</div>
+<!--========================-->
+
+<!--========================-->
+<!-- MDB -->
+<script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"
+></script>
+</body>
+</html>

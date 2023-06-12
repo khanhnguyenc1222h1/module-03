@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="5be95f20-f868-416c-9162-813937273fcc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../JWBD-EXAM_C1222H1_NguyenVanKhanh/src/main/java/com/example/jwbdexam_c1222h1_nguyenvankhanh/Connection/jdbcConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWBD-EXAM_C1222H1_NguyenVanKhanh/src/main/java/com/example/jwbdexam_c1222h1_nguyenvankhanh/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWBD-EXAM_C1222H1_NguyenVanKhanh/src/main/java/com/example/jwbdexam_c1222h1_nguyenvankhanh/model/dao/ProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWBD-EXAM_C1222H1_NguyenVanKhanh/src/main/java/com/example/jwbdexam_c1222h1_nguyenvankhanh/model/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWBD-EXAM_C1222H1_NguyenVanKhanh/src/main/java/com/example/jwbdexam_c1222h1_nguyenvankhanh/model/entity/ShoppingCart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWBD-EXAM_C1222H1_NguyenVanKhanh/src/main/java/com/example/jwbdexam_c1222h1_nguyenvankhanh/model/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWBD-EXAM_C1222H1_NguyenVanKhanh/src/main/java/com/example/jwbdexam_c1222h1_nguyenvankhanh/test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../JWBD-EXAM_C1222H1_NguyenVanKhanh/src/main/webapp/WEB-INF/view/Product.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/java/com/example/casestudykhanh/controller/PostController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/java/com/example/casestudykhanh/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/java/com/example/casestudykhanh/model/dao/PostDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/java/com/example/casestudykhanh/model/entity/Post.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/java/com/example/casestudykhanh/model/service/PostService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/webapp/WEB-INF/Winku/newsfeed.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/webapp/WEB-INF/view/AddPost.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/webapp/WEB-INF/view/DeletePost.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/webapp/WEB-INF/view/Home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/webapp/WEB-INF/view/ShowPost.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/webapp/WEB-INF/view/UpdatePost.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/webapp/resources/js/home.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/common/cart.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/common/checkout.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/common/codepen/demo/demo.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/common/codepen/demo/demo.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/common/codepen/demo/demo.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/common/codepen/demo/demo.scss" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/common/codepen/magicCard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/common/codepen/phuoc/crudtable.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/common/codepen/phuoc/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/common/codepen/phuoc/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/common/codepen/phuoc/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/common/codepen/phuoc/product.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/common/codepen/phuoc/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/common/codepen/priceCard.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/common/codepen/thoimien.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/common/detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/common/history.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/common/home.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/common/manageProduct.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/common/order.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/common/register.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../demo/common/shop.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/java/com/example/ecommercekhanhnguyen/connection/JdbcConnection.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/java/com/example/ecommercekhanhnguyen/controller/HomeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/java/com/example/ecommercekhanhnguyen/controller/ProductController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/java/com/example/ecommercekhanhnguyen/controller/SearchController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/java/com/example/ecommercekhanhnguyen/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/java/com/example/ecommercekhanhnguyen/dao/CartDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/java/com/example/ecommercekhanhnguyen/dao/CategoryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/java/com/example/ecommercekhanhnguyen/dao/OrderDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/java/com/example/ecommercekhanhnguyen/dao/ProductDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/java/com/example/ecommercekhanhnguyen/dao/UserDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/java/com/example/ecommercekhanhnguyen/dto/CartDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/java/com/example/ecommercekhanhnguyen/dto/HistoryDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/java/com/example/ecommercekhanhnguyen/dto/OrderDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/java/com/example/ecommercekhanhnguyen/entity/Cart.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/java/com/example/ecommercekhanhnguyen/entity/Category.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/java/com/example/ecommercekhanhnguyen/entity/Product.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/java/com/example/ecommercekhanhnguyen/entity/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/java/com/example/ecommercekhanhnguyen/service/HomeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/java/com/example/ecommercekhanhnguyen/service/ProductService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/java/com/example/ecommercekhanhnguyen/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/webapp/WEB-INF/cart.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/webapp/WEB-INF/checkout.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/webapp/WEB-INF/detail.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/webapp/WEB-INF/footerpage.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/webapp/WEB-INF/history.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/webapp/WEB-INF/home.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/webapp/WEB-INF/index.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/webapp/WEB-INF/login.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/webapp/WEB-INF/managerProduct.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/webapp/WEB-INF/order.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/webapp/WEB-INF/register.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/webapp/WEB-INF/shop.jsp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../ecommerce-khanhnguyen/src/main/webapp/WEB-INF/updateProduct.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-03/error.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-03/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-03/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-03/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-03/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-03/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-03/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-03/register.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo-2/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/../demo-2/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/case-study-khanh/casestudykhanh.sql" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/case-study-khanh/casestudykhanh.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/case-study-khanh/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/case-study-khanh/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/java/com/example/casestudykhanh/connection/jdbcConnection.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/java/com/example/casestudykhanh/connection/jdbcConnection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/java/com/example/casestudykhanh/controller/UserServlet.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/java/com/example/casestudykhanh/model/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/java/com/example/casestudykhanh/model/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/java/com/example/casestudykhanh/model/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/java/com/example/casestudykhanh/model/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/java/com/example/casestudykhanh/model/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/java/com/example/casestudykhanh/model/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/webapp/WEB-INF/view/error/error.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/webapp/WEB-INF/view/error.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/webapp/WEB-INF/view/home/home.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/webapp/WEB-INF/view/login/login.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/webapp/WEB-INF/view/Login.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/webapp/WEB-INF/view/register/register.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/webapp/WEB-INF/view/Register.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/case-study-khanh/src/main/webapp/resources/css/home.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../demo/module-03-case-study" beforeDir="false" afterPath="$PROJECT_DIR$/../demo/module-03-case-study" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/.idea/libraries/mysql_connector_java_8_0_28.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/case-study-v2.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/invoice.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/out/production/case-study-v2/case-study.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/out/production/case-study-v2/data/product.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/out/production/case-study-v2/history/InterfaceHistory.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/out/production/case-study-v2/main/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/out/production/case-study-v2/product/InterfaceProduct.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/out/production/case-study-v2/product/Product.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/out/production/case-study-v2/product/ProductService.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/out/production/case-study-v2/user/Customer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/out/production/case-study-v2/user/InterfaceUser.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/out/production/case-study-v2/user/Staff.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/out/production/case-study-v2/user/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/src/case-study.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/src/data/product.csv" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/src/history/InterfaceHistory.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/src/main/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/src/product/InterfaceProduct.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/src/product/Product.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/src/product/ProductService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/src/user/Customer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/src/user/InterfaceUser.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/src/user/Staff.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/case-study-v2/src/user/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/jwbd-user-manager" beforeDir="false" afterPath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-12/jwbd-user-manager" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-13/jwbd-user-manager-0" beforeDir="false" afterPath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-13/jwbd-user-manager-0" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-13/jwbd-user-manager-1" beforeDir="false" afterPath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-13/jwbd-user-manager-1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-13/jwbd-user-manager-2" beforeDir="false" afterPath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-13/jwbd-user-manager-2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-13/jwbd-user-manager-3" beforeDir="false" afterPath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-13/jwbd-user-manager-3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-13/jwbd-user-manager-4" beforeDir="false" afterPath="$PROJECT_DIR$/../../[BC-JAVA-JWBD] Java Web Back-end Development 2.1/lession-13/jwbd-user-manager-4" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="workspaceImportEnabled" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2PgSVci3XuPaHSbL1Did0h99t3G" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "F:/Codegym/Học liệu/Course/Module-03/Case Study/ecommerce-khanhnguyen",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.37816092",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration name="Tomcat 9.0.69" type="#com.intellij.j2ee.web.tomcat.TomcatRunConfigurationFactory" factoryName="Local" APPLICATION_SERVER_NAME="Tomcat 9.0.69" ALTERNATIVE_JRE_ENABLED="false">
+      <option name="BROWSER_ID" value="98ca6316-2f89-46d9-a9e5-fa9e2b0625b3" />
+      <option name="UPDATING_POLICY" value="hot-swap-classes" />
+      <deployment>
+        <artifact name="Gradle : com.example : ecommerce-nguyenvankhanh-15-2-2023-1.0-SNAPSHOT.war">
+          <settings>
+            <option name="CONTEXT_PATH" value="" />
+          </settings>
+        </artifact>
+      </deployment>
+      <server-settings>
+        <option name="BASE_DIRECTORY_NAME" value="7a3b1493-9bb4-438b-a72c-55ee64035748" />
+      </server-settings>
+      <predefined_log_file enabled="true" id="Tomcat" />
+      <predefined_log_file enabled="true" id="Tomcat Catalina" />
+      <predefined_log_file id="Tomcat Manager" />
+      <predefined_log_file id="Tomcat Host Manager" />
+      <predefined_log_file id="Tomcat Localhost Access" />
+      <RunnerSettings RunnerId="Debug">
+        <option name="DEBUG_PORT" value="63100" />
+      </RunnerSettings>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Cover">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Debug">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Profile">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <ConfigurationWrapper VM_VAR="JAVA_OPTS" RunnerId="Run">
+        <option name="USE_ENV_VARIABLES" value="true" />
+        <STARTUP>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </STARTUP>
+        <SHUTDOWN>
+          <option name="USE_DEFAULT" value="true" />
+          <option name="SCRIPT" value="" />
+          <option name="VM_PARAMETERS" value="" />
+          <option name="PROGRAM_PARAMETERS" value="" />
+        </SHUTDOWN>
+      </ConfigurationWrapper>
+      <method v="2">
+        <option name="Make" enabled="true" />
+        <option name="BuildArtifacts" enabled="true">
+          <artifact name="Gradle : com.example : ecommerce-nguyenvankhanh-15-2-2023-1.0-SNAPSHOT.war" />
+        </option>
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5be95f20-f868-416c-9162-813937273fcc" name="Changes" comment="" />
+      <created>1683877259961</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1683877259961</updated>
+      <workItem from="1683877261333" duration="945000" />
+      <workItem from="1686489644699" duration="29000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

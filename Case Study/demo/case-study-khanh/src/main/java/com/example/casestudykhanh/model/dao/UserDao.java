@@ -1,59 +1,47 @@
 package com.example.casestudykhanh.model.dao;
+import com.example.casestudykhanh.connection.jdbcConnection;
 import com.example.casestudykhanh.model.entity.User;
 
-import javax.sql.rowset.serial.SerialException;
-import java.io.IOException;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
+import java.sql.*;
 
-import static com.example.casestudykhanh.connection.jdbcConnection.getConnection;
 
 public class UserDao{
-    private static final String insert_user = "INSERT INTO USER(FULLNAME,ADDRESS,PHONENUMBER,USERNAME,PASSWORD) VALUES (?,?,?,?,?);";
-    private static final String select_user_id = "SELECT ID,FULLNAME,ADDRESS,PHONENUMBER,USERNAME,PASSWORD USER WHERE USERNAME=? AND PASSWORD=?";
-    private static final String select_all_user = "SELECT * FROM USER";
-
-    public static void insert(User user) {
-        try{
-            Connection connection = getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement(insert_user);
-            preparedStatement.setString(1,user.getFullname());
-            preparedStatement.setString(2,user.getAddress());
-            preparedStatement.setString(3,user.getPhoneNumber());
-            preparedStatement.setString(4,user.getUsername());
-            preparedStatement.setString(5,user.getPassword());
-            if(preparedStatement.executeUpdate() > 0) {
-                System.out.println("Added user successfully.");
-            } else {
-                System.out.println("Failed to insert user.");
+    static Connection conn = null;
+    static PreparedStatement ps = null;
+    static ResultSet rs = null;
+    private static final String INSERT_USER = "INSERT INTO USER(FULLNAME,EMAIL,PASSWORD,GENDER) VALUES (?,?,?,?);";
+    private static final String SELECT_USER_BY_ID = "SELECT * FROM USER WHERE EMAIL=? && PASSWORD=?";
+    public void insertUser(User user){
+            try{
+                conn = jdbcConnection.getConnection();
+                ps = conn.prepareStatement(INSERT_USER);
+                ps.setString(1, user.getFullname());
+                ps.setString(2, user.getEmail());
+                ps.setString(3, user.getPassword());
+                ps.setString(4, user.getGender());
+                ps.executeUpdate();
+                conn.close();
+                ps.close();
+            }catch (Exception e){
             }
-            connection.close();
-            preparedStatement.close();
-        }catch (Exception e){
-            e.printStackTrace();
-        }
     }
-    public static boolean validUser(String username,String password) {
-        boolean result = false;
+    public static User getUserById(String email,String password){
         try{
-            Connection connection = getConnection();
-            PreparedStatement preparedStatement = connection.prepareStatement(select_all_user);
-            ResultSet rs = preparedStatement.executeQuery();
-            while (rs.next()){
-                String userName = rs.getString("USERNAME");
-                String passWord = rs.getString("PASSWORD");
-                if(userName.equals(username) && passWord.equals(password)){
-                    result = true;
-                    System.out.println("valid user true");
-                }
+            conn = jdbcConnection.getConnection();
+            ps= conn.prepareStatement(SELECT_USER_BY_ID);
+            ps.setString(1,email);
+            ps.setString(2,password);
+            rs = ps.executeQuery();
+            while(rs.next()){
+                String id = rs.getString("ID_USER");
+                String fullname = rs.getString("FULLNAME");
+                String emails = rs.getString("EMAIL");
+                String passwords = rs.getString("PASSWORD");
+                String gender = rs.getString("GENDER");
+                return new User(id,fullname,emails,passwords,gender);
             }
-        }catch (SerialException e) {
-            e.printStackTrace();
-        }catch (SQLException e) {
-            e.printStackTrace();
+        }catch (Exception e){
         }
-        return result;
+        return null;
     }
 }

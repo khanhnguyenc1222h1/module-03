@@ -1,0 +1,677 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lavie</title>
+    <!-- Font Awesome -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            rel="stylesheet"
+    />
+    <!-- Google Fonts -->
+    <link
+            href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+            rel="stylesheet"
+    />
+    <!-- MDB -->
+    <link
+            href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.css"
+            rel="stylesheet"
+    />
+</head>
+<body>
+<nav class="navbar navbar-light bg-light sticky-top">
+    <div class="container-fluid">
+        <a class="navbar-brand fs-4" href="#">Lavie</a>
+        <!-- Light -->
+        <div class="btn-group shadow-0">
+            <button type="button" class="btn btn-light dropdown-toggle" data-mdb-toggle="dropdown" aria-expanded="false">
+                <i class="fa fa-bars"></i> Danh mục sản phẩm
+            </button>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Đồng hồ</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Laptop</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Điện thoại</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Áo thung</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Quần jean</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Sách thiếu nhi</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Linh kiện điện tử</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Ốp lưng điện thoại</a></li>
+                <li><hr class="dropdown-divider" /></li>
+                <li><a class="dropdown-item" href="#">Thực phẩm chức năng</a></li>
+            </ul>
+        </div>
+        <form class="d-flex input-group w-50">
+            <input
+                    type="search"
+                    class="form-control rounded"
+                    placeholder="Tìm kiếm"
+                    aria-label="Search"
+                    aria-describedby="search-addon"
+            />
+            <span class="input-group-text border-0" id="search-addon">
+                <button type="submit" class="form-control rounded"><i class="fas fa-search"></i></button>
+      </span>
+        </form>
+        <!-- Right elements -->
+        <div class="d-flex align-items-center">
+            <!-- Icon -->
+            <a class="text-reset me-3" href="#">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="badge rounded-pill badge-notification bg-danger">1</span>
+            </a>
+
+            <!-- Notifications -->
+            <div class="dropdown">
+                <a
+                        class="text-reset me-3 dropdown-toggle hidden-arrow"
+                        href="#"
+                        id="navbarDropdownMenuLink"
+                        role="button"
+                        data-mdb-toggle="dropdown"
+                        aria-expanded="false"
+                >
+                    <i class="fas fa-bell"></i>
+                    <span class="badge rounded-pill badge-notification bg-danger">1</span>
+                </a>
+                <ul
+                        class="dropdown-menu dropdown-menu-end"
+                        aria-labelledby="navbarDropdownMenuLink"
+                >
+                    <li>
+                        <a class="dropdown-item" href="#">Some news</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Another news</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- Avatar -->
+            <div class="dropdown">
+                <a
+                        class="dropdown-toggle d-flex align-items-center hidden-arrow"
+                        href="#"
+                        id="navbarDropdownMenuAvatar"
+                        role="button"
+                        data-mdb-toggle="dropdown"
+                        aria-expanded="false"
+                >
+                    <img
+                            src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+                            class="rounded-circle"
+                            height="25"
+                            alt="Black and White Portrait of a Man"
+                            loading="lazy"
+                    />
+                </a>
+                <ul
+                        class="dropdown-menu dropdown-menu-end"
+                        aria-labelledby="navbarDropdownMenuAvatar"
+                >
+                    <li>
+                        <a class="dropdown-item" href="#">Trang cá nhân</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Cài đặt</a>
+                    </li>
+                    <li>
+                        <a class="dropdown-item" href="#">Đăng xuất</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- Right elements -->
+    </div>
+</nav>
+<!--==============thanh search===============-->
+<div class="container p-4">
+    <div class="row g-0">
+        <div class="col-sm-6 col-md-5">
+            <img
+                    src="https://mdbcdn.b-cdn.net/img/new/standard/city/041.webp"
+                    class="img-thumbnail"
+                    alt="Hollywood Sign on The Hill"
+            />
+            <section class="text-center p-4">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-5 mb-lg-0 position-relative">
+                        <a href="#">
+                            <img
+                                src="data:image/jpeg;base64,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"
+                                class="img-thumbnail"
+                                alt="Hollywood Sign on The Hill"
+                            />
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-5 mb-lg-0 position-relative">
+                        <a href="#">
+                            <img
+                                    src="data:image/jpeg;base64,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"
+                                    class="img-thumbnail"
+                                    alt="Hollywood Sign on The Hill"
+                            />
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-5 mb-lg-0 position-relative">
+                        <a href="#">
+                            <img
+                                    src="data:image/jpeg;base64,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"
+                                    class="img-thumbnail"
+                                    alt="Hollywood Sign on The Hill"
+                            />
+                        </a>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-5 mb-md-0 position-relative">
+                        <a href="#">
+                            <img
+                                    src="data:image/jpeg;base64,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"
+                                    class="img-thumbnail"
+                                    alt="Hollywood Sign on The Hill"
+                            />
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="col-6 col-md-7">
+            <div class="p-4">
+                <h4>Get connected with us on social networks</h4>
+                <h5 style="color: red;padding-top: 20px">100.000đ</h5>
+            </div>
+            <div class="p-3">
+                <table>
+                    <tr>
+                        <td>Vận chuyển:</td>
+                        <td><i class="fa fa-truck p-2"></i>Miển phí vận chuyển</td>
+                    </tr>
+                    <tr>
+                        <td>Số lượng:</td>
+                        <td>
+                            <label>123 sản phẩm có sẵn</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Màu sắc:</td>
+                        <td>
+                            <input class="form-check-input" type="radio" name="color" value="red">Đỏ
+                            <input class="form-check-input" type="radio" name="color" value="yellow">Vàng
+                            <input class="form-check-input" type="radio" name="color" value="green">Xanh lục
+                            <input class="form-check-input" type="radio" name="color" value="blue">Xanh lam
+                            <input class="form-check-input" type="radio" name="color" value="pink">Hồng
+                            <input class="form-check-input" type="radio" name="color" value="black">Đen
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Kích thước:</td>
+                        <td>
+                            <input class="form-check-input" type="radio" name="size" value="X">X
+                            <input class="form-check-input" type="radio" name="size" value="XL">XL
+                            <input class="form-check-input" type="radio" name="size" value="L">L
+                            <input class="form-check-input" type="radio" name="size" value="S">S
+                            <input class="form-check-input" type="radio" name="size" value="M">M
+                            <input class="form-check-input" type="radio" name="size" value="XXL">XXL
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class=" p-4">
+                <a href="#" class="btn btn-primary">Thêm vào giỏ hàng</a>
+                <a href="#" class="btn btn-primary">Mua hàng</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid">
+    <ul class="nav nav-tabs mb-3" id="myTab0" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button
+                    class="nav-link active"
+                    id="home-tab0"
+                    data-mdb-toggle="tab"
+                    data-mdb-target="#home0"
+                    type="button"
+                    role="tab"
+                    aria-controls="home"
+                    aria-selected="true"
+            >
+                Mô tả sản phẩm
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button
+                    class="nav-link"
+                    id="profile-tab0"
+                    data-mdb-toggle="tab"
+                    data-mdb-target="#profile0"
+                    type="button"
+                    role="tab"
+                    aria-controls="profile"
+                    aria-selected="false"
+            >
+                Chi tiết sản phẩm
+            </button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button
+                    class="nav-link"
+                    id="contact-tab0"
+                    data-mdb-toggle="tab"
+                    data-mdb-target="#contact0"
+                    type="button"
+                    role="tab"
+                    aria-controls="contact"
+                    aria-selected="false"
+            >
+                Đánh giá
+            </button>
+        </li>
+    </ul>
+    <div class="tab-content"  id="myTabContent0">
+        <div
+                class="tab-pane fade show active "
+                id="home0"
+                role="tabpanel"
+                aria-labelledby="home-tab0"
+        >
+            <pre style="font-family: Arial;overflow-x: hidden">
+                Set áo trễ vai babydoll thắt nơ cực điệu phối chân váy đen dáng xếp ly dáng ngắn A01
+
+                𝙨𝙚𝙩 𝙖́𝙤 𝙨𝙤̛ 𝙢𝙞 𝙫𝙖̀ 𝙘𝙝𝙖̂𝙣 𝙫𝙖́𝙮  là một item phổ biến đối với các quý cô. Hơn thế nữa, set đồ này đã không
+                còn xa lạ gì đối với một cô nàng công sở. Chính vì sự tiện lợi mà chúng càng ngày càng được ưa chuộng.
+                Không chỉ đối với thời trang công sở mà còn phù hợp với thời trang đường phố.
+
+                ---------𝗖𝗔𝗠 𝗞𝗘̂́𝗧 -----------
+                1. Sản phẩm giống mô tả, kèm ảnh thật, video shop tự quay chụp
+                2. Mfcool store : CAM KẾT ĐỔI TRẢ MIỄN PHÍ TRONG VÒNG 3 NGÀY
+                3. Tuyển sỉ, sll giá tốt ko qua trung gian, Mẫu mã cập nhật liên tục, theo hottrend
+                4. Liên hệ khiếu nại chat tin nhắn
+                Lưu ý: Các bạn chú ý đọc thông tin sản phẩm trước khi đặt hàng, shop chỉ chuyển đơn theo đúng phân loại khách chọn trong đơn.
+
+                𝗠𝗢̂ 𝗧𝗔̉ 𝗦𝗔̉𝗡 𝗣𝗛𝗔̂̉𝗠:Set áo trễ vai babydoll thắt nơ cực điệu phối chân váy đen dáng xếp ly dáng ngắn A01
+                - 𝗞𝗶𝗲̂̉𝘂 𝗰𝗼̂̉ 𝗮́𝗼: trễ vai
+                - 𝗖𝗵𝗮̂́𝘁 𝗹𝗶𝗲̣̂𝘂 𝘃𝗮̉𝗶: áo chất thô lụa, chân váy chất umi
+                - 𝗠𝗮̂̃𝘂/𝗖𝗵𝗶 𝘁𝗶𝗲̂́𝘁: Set áo trễ vai babydoll thắt nơ cực điệu phối chân váy đen dáng xếp ly dáng ngắn A01
+                - 𝗙𝗼𝗿𝗺 𝗱𝗮́𝗻𝗴: S, M, L
+                - 𝗛𝗼𝗮̀𝗻 𝗰𝗮̉𝗻𝗵: Mặc đi chơi, đi cafe, đi biển,...
+                - 𝗫𝘂𝗮̂́𝘁 𝘅𝘂̛́: Trung quốc
+
+                ĐẶC ĐIỂM CỦA SET ÁO SƠ MI CHÂN VÁY:
+                - 𝘾𝙝𝙖̂𝙣 𝙫𝙖́𝙮 𝙘𝙝𝙪̛̃ 𝘼 là thiết kế thời trang hoàn hảo dành cho bạn tại môi trường công sở. Sự trẻ trung, năng động của thiết kế giúp chị em tự tin nhất nơi làm việc.
+                - Kết hợp chân váy chữ A với áo sơ mi mang đến cho nữ công sở sự thanh lịch, tự tin nơi công sở.
+                - Set gồm 2 món rời nhau nên có thể tách riêng ra phối với các trang phục khác, vô cùng tiện lợi.
+            </pre>
+        </div>
+        <div class="tab-pane fade container" id="profile0" role="tabpanel" aria-labelledby="profile-tab0">
+            <dl class="row">
+                <dt class="col-sm-3">Description lists</dt>
+                <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+                <dt class="col-sm-3">Euismod</dt>
+                <dd class="col-sm-9">
+                    <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
+                    <p>Donec id elit non mi porta gravida at eget metus.</p>
+                </dd>
+                <dt class="col-sm-3">Malesuada porta</dt>
+                <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+                <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+                <dd class="col-sm-9">
+                    Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.
+                </dd>
+                <dt class="col-sm-3">Nesting</dt>
+                <dd class="col-sm-9">
+                    <dl class="row">
+                        <dt class="col-sm-4">Nested definition list</dt>
+                        <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+                    </dl>
+                </dd>
+            </dl>
+        </div>
+        <div class="tab-pane fade" id="contact0" role="tabpanel" aria-labelledby="contact-tab0">
+                <div class="d-flex flex-row mb-3 container">
+                    <div class="p-2">
+                        <div>
+                            <div class="d-flex align-items-center">
+                                <img
+                                        src="https://mdbootstrap.com/img/new/avatars/8.jpg"
+                                        alt=""
+                                        style="width: 45px; height: 45px"
+                                        class="rounded-circle"
+                                />
+                                <div class="ms-3">
+                                    <p class="fw-bold mb-1">John Doe</p>
+                                    <p class="text-muted mb-0">john.doe@gmail.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        <p style="padding-left: 60px">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc </p>
+                    </div>
+                    <div class="p-2 container" style="width: 400px">
+                        <form>
+                            <!-- Name input -->
+                            <div class="form-outline mb-4">
+                                <input type="text" id="form4Example1" class="form-control" />
+                                <label class="form-label" for="form4Example1">Name</label>
+                            </div>
+
+                            <!-- Email input -->
+                            <div class="form-outline mb-4">
+                                <input type="email" id="form4Example2" class="form-control" />
+                                <label class="form-label" for="form4Example2">Email address</label>
+                            </div>
+
+                            <!-- Message input -->
+                            <div class="form-outline mb-4">
+                                <textarea class="form-control" id="form4Example3" rows="4"></textarea>
+                                <label class="form-label" for="form4Example3">Message</label>
+                            </div>
+
+                            <!-- Checkbox -->
+                            <div class="form-check d-flex justify-content-center mb-4">
+                                <input class="form-check-input me-2" type="checkbox" value="" id="form4Example4" checked />
+                                <label class="form-check-label" for="form4Example4">
+                                    Send me a copy of this message
+                                </label>
+                            </div>
+
+                            <!-- Submit button -->
+                            <button type="submit" class="btn btn-primary btn-block mb-4">Send</button>
+                        </form>
+                    </div>
+                </div>
+        </div>
+    </div>
+</div>
+<!--===========sản phẩm bôi bật==============-->
+<div class="container border p-2">
+    <h4 class="">Gợi ý sản phẩm</h4>
+    <div class="row row-cols-2 row-cols-lg-5 g-0 g-lg-3">
+        <div class="col">
+            <div class="p-3 border ">
+                <a class="card-line bg-image hover-overlay ripple" data-mdb-ripple-color="light" href="#" style="color: #5e5e5e">
+                    <img
+                            src="https://mdbcdn.b-cdn.net/img/new/standard/city/047.webp"
+                            class="img-fluid rounded"
+                            alt="Townhouses and Skyscrapers"
+                    />
+                    <div>Google News là một trang web tổng hợp tin tức tự động được cung cấp bởi Google.</div>
+                    <div style="color: red;text-align: right;padding-top: 10px">100.000đ</div>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3 border ">
+                <a class="card-line bg-image hover-overlay ripple" data-mdb-ripple-color="light" href="#" style="color: #5e5e5e">
+                    <img
+                            src="https://mdbcdn.b-cdn.net/img/new/standard/city/047.webp"
+                            class="img-fluid rounded"
+                            alt="Townhouses and Skyscrapers"
+                    />
+                    <div>Google News là một trang web tổng hợp tin tức tự động được cung cấp bởi Google.</div>
+                    <div style="color: red;text-align: right;padding-top: 10px">100.000đ</div>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3 border ">
+                <a class="card-line bg-image hover-overlay ripple" data-mdb-ripple-color="light" href="#" style="color: #5e5e5e">
+                    <img
+                            src="https://mdbcdn.b-cdn.net/img/new/standard/city/047.webp"
+                            class="img-fluid rounded"
+                            alt="Townhouses and Skyscrapers"
+                    />
+                    <div>Google News là một trang web tổng hợp tin tức tự động được cung cấp bởi Google.</div>
+                    <div style="color: red;text-align: right;padding-top: 10px">100.000đ</div>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3 border ">
+                <a class="card-line bg-image hover-overlay ripple" data-mdb-ripple-color="light" href="#" style="color: #5e5e5e">
+                    <img
+                            src="https://mdbcdn.b-cdn.net/img/new/standard/city/047.webp"
+                            class="img-fluid rounded"
+                            alt="Townhouses and Skyscrapers"
+                    />
+                    <div>Google News là một trang web tổng hợp tin tức tự động được cung cấp bởi Google.</div>
+                    <div style="color: red;text-align: right;padding-top: 10px">100.000đ</div>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3 border ">
+                <a class="card-line bg-image hover-overlay ripple" data-mdb-ripple-color="light" href="#" style="color: #5e5e5e">
+                    <img
+                            src="https://mdbcdn.b-cdn.net/img/new/standard/city/047.webp"
+                            class="img-fluid rounded"
+                            alt="Townhouses and Skyscrapers"
+                    />
+                    <div>Google News là một trang web tổng hợp tin tức tự động được cung cấp bởi Google.</div>
+                    <div style="color: red;text-align: right;padding-top: 10px">100.000đ</div>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3 border ">
+                <a class="card-line bg-image hover-overlay ripple" data-mdb-ripple-color="light" href="#" style="color: #5e5e5e">
+                    <img
+                            src="https://mdbcdn.b-cdn.net/img/new/standard/city/047.webp"
+                            class="img-fluid rounded"
+                            alt="Townhouses and Skyscrapers"
+                    />
+                    <div>Google News là một trang web tổng hợp tin tức tự động được cung cấp bởi Google.</div>
+                    <div style="color: red;text-align: right;padding-top: 10px">100.000đ</div>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3 border ">
+                <a class="card-line bg-image hover-overlay ripple" data-mdb-ripple-color="light" href="#" style="color: #5e5e5e">
+                    <img
+                            src="https://mdbcdn.b-cdn.net/img/new/standard/city/047.webp"
+                            class="img-fluid rounded"
+                            alt="Townhouses and Skyscrapers"
+                    />
+                    <div>Google News là một trang web tổng hợp tin tức tự động được cung cấp bởi Google.</div>
+                    <div style="color: red;text-align: right;padding-top: 10px">100.000đ</div>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3 border ">
+                <a class="card-line bg-image hover-overlay ripple" data-mdb-ripple-color="light" href="#" style="color: #5e5e5e">
+                    <img
+                            src="https://mdbcdn.b-cdn.net/img/new/standard/city/047.webp"
+                            class="img-fluid rounded"
+                            alt="Townhouses and Skyscrapers"
+                    />
+                    <div>Google News là một trang web tổng hợp tin tức tự động được cung cấp bởi Google.</div>
+                    <div style="color: red;text-align: right;padding-top: 10px">100.000đ</div>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3 border ">
+                <a class="card-line bg-image hover-overlay ripple" data-mdb-ripple-color="light" href="#" style="color: #5e5e5e">
+                    <img
+                            src="https://mdbcdn.b-cdn.net/img/new/standard/city/047.webp"
+                            class="img-fluid rounded"
+                            alt="Townhouses and Skyscrapers"
+                    />
+                    <div>Google News là một trang web tổng hợp tin tức tự động được cung cấp bởi Google.</div>
+                    <div style="color: red;text-align: right;padding-top: 10px">100.000đ</div>
+                </a>
+            </div>
+        </div>
+        <div class="col">
+            <div class="p-3 border ">
+                <a class="card-line bg-image hover-overlay ripple" data-mdb-ripple-color="light" href="#" style="color: #5e5e5e">
+                    <img
+                            src="https://mdbcdn.b-cdn.net/img/new/standard/city/047.webp"
+                            class="img-fluid rounded"
+                            alt="Townhouses and Skyscrapers"
+                    />
+                    <div>Google News là một trang web tổng hợp tin tức tự động được cung cấp bởi Google.</div>
+                    <div style="color: red;text-align: right;padding-top: 10px">100.000đ</div>
+                </a>
+            </div>
+        </div>
+        <nav class="container" style="padding-top: 30px" aria-label="...">
+            <ul class="pagination pagination-circle">
+                <li class="page-item">
+                    <a class="page-link">Previous</a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item" aria-current="page">
+                    <a class="page-link" href="#">2 <span class="visually-hidden">(current)</span></a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">Next</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+</div>
+<!--=====================================-->
+<!--==============chân tranng===============-->
+<!-- Footer -->
+<footer class="text-center text-lg-start bg-light text-muted ">
+    <!-- Section: Social media -->
+    <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        <!-- Left -->
+        <div class="me-5 d-none d-lg-block">
+            <span>Get connected with us on social networks:</span>
+        </div>
+        <!-- Left -->
+
+        <!-- Right -->
+        <div>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-google"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="" class="me-4 text-reset">
+                <i class="fab fa-github"></i>
+            </a>
+        </div>
+        <!-- Right -->
+    </section>
+    <!-- Section: Social media -->
+
+    <!-- Section: Links  -->
+    <section class="">
+        <div class="container text-center text-md-start mt-5">
+            <!-- Grid row -->
+            <div class="row mt-3">
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                    <!-- Content -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        <i class="fas fa-gem me-3"></i>Company name
+                    </h6>
+                    <p>
+                        Here you can use rows and columns to organize your footer content. Lorem ipsum
+                        dolor sit amet, consectetur adipisicing elit.
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Products
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">Angular</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">React</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Vue</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Laravel</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">
+                        Useful links
+                    </h6>
+                    <p>
+                        <a href="#!" class="text-reset">Pricing</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Settings</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Orders</a>
+                    </p>
+                    <p>
+                        <a href="#!" class="text-reset">Help</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                    <!-- Links -->
+                    <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                    <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
+                    <p>
+                        <i class="fas fa-envelope me-3"></i>
+                        info@example.com
+                    </p>
+                    <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
+                    <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
+                </div>
+                <!-- Grid column -->
+            </div>
+            <!-- Grid row -->
+        </div>
+    </section>
+    <!-- Section: Links  -->
+
+    <!-- Copyright -->
+    <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+        © 2021 Copyright:
+        <a class="text-reset fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- Footer -->
+<!-- MDB -->
+<script
+        type="text/javascript"
+        src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/6.3.0/mdb.min.js"
+></script>
+</body>
+</html>
